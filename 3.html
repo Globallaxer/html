@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="3.css">
+    <title>ClanCounter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const linkContacts = document.querySelector('.menu__item_contacts');
+        const modal = document.querySelector('.modal');
+        const modalClose = modal.querySelector('.modal__close');
+        linkContacts.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.classList.add('modal_active');
+        });
+        modalClose.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.classList.remove('modal_active');
+        });
+    });
+</script>
+    <div class="wrapper">
+        <header class="header">
+            <div>
+                <a href="index.html"><img src="Clan_counter.jpg" alt=""></a>
+                <a href="index.html"><img src="image.png" alt=""></a>
+            </div>
+            <nav class="menu">
+                <a class ='menu__item icon fas fa-rocket' href="https://discord.gg/8V4baBtKKV"><img src="Discord_art.png" alt=""></a>
+                <a class ='menu__item icon fas fa-rocket' href="https://t.me/@GF_Laxer"><img src="tg_.png" alt=""></a>
+                <a class="menu__item" href="index.html">Главная</a>
+                <a class="menu__item" href="2.html">Услуги</a>
+                <a class="menu__item menu__item_contacts" href="#">Контакты</a>
+                <a class='menu__item' href="3.html">🔐Login</a>
+                
+            </nav>
+        </header>
+
+    <div class="paravos">
+        <div class="login-container">
+        <h1 class="login-title">Авторизация</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="username">Логин</label>
+                <input type="text" id="username" name="username" placeholder="Введите ваш логин" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
+            </div>
+            <button type="submit" class="login-button">Войти</button>
+            <div class="forgot-password">
+                <a href="#">Забыли пароль?</a>
+            </div>
+        </form>
+    </div>
+</div>
+        <footer class="footer">
+            <div>
+                Телефон: +7(993)-450-92-85
+            </div>
+            <div>
+                Email: globallaxer@gmail.com
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal">
+        <div class="modal__content">
+            <a href="#" class="modal__close" title="Закрыть">&times;</a>
+            <h3>Контакты</h3>
+            <p>Телефон: +7(993)-450-92-85</p>
+            <p>Email: globallaxer@gmail.com</p>
+            <p>Мы на карте:</p>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/ropshinskaya_ulitsa_1_32/Z0kYdA5nQUEPQFtjfXV0dntibQ==/?ll=30.298521%2C59.958021&utm_medium=mapframe&utm_source=maps&z=18.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ропшинская улица, 1/32 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.298521%2C59.958021&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQzNTQwMRJS0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtC_0YjQuNC90YHQutCw0Y8g0YPQu9C40YbQsCwgMS8zMiIKDf9h8kEVtNRvQg%2C%2C&z=18.31" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </div>
+</body>
+</html>
